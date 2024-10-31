@@ -143,10 +143,12 @@
   }
   .home-text20 {
     font-size: 1.3em;
+    font-family: "Impact";
   }
   .home-text25 {
     width: 289px;
     height: auto;
+    font-family: "Impact";
     font-size: 1.2em;
     text-align: center;
     align-items: center;
