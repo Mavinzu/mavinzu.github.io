@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   background-color: lightgray;
+  overflow-x: hidden;
 }
 .home-text10 {
   font-style: italic;
