@@ -142,16 +142,17 @@
     margin-bottom: var(--dl-space-space-sixunits);
   }
   .home-text20 {
-    font-size: 0.8em;
-    font-family: "Impact";
+  height: auto;
+  font-size: 0.8em;
+  align-self: center;
+  font-family: "Impact";
+  margin-right: 0;
   }
   .home-text25 {
-    width: 289px;
-    height: auto;
-    font-family: "Impact";
     font-size: 0.8em;
-    text-align: center;
-    align-items: center;
+    align-self: center;
+    font-family: "Impact";
+    margin-left: 0;
   }
   .home-image {
     left: 0px;
