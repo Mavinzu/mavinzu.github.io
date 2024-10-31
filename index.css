@@ -8,7 +8,6 @@
   flex-direction: column;
   background-color: lightgray;
   background-size: cover;
-  overflow-x: hidden;
 }
 .home-text10 {
   font-style: italic;
@@ -160,4 +159,16 @@
     bottom: 0px;
     position: absolute;
   }
+  .home-container1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+  background-size: cover;
+  overflow-x: hidden;
+}
 }
