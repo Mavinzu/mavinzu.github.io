@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   background-color: lightgray;
-  background-size: 100%;
+  background-size: cover;
   overflow-x: hidden;
 }
 .home-text10 {
