@@ -25,7 +25,7 @@ body {
     justify-content: flex-end;
     list-style-type: none;
 }
-.nav-link li {
+.nav-link a {
     display: block;
     margin: 0 10px;
     color: white;
