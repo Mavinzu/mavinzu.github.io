@@ -1,175 +1,125 @@
-.home-container1 {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  min-height: 100%;
-  align-items: center;
-  flex-direction: column;
-  background-color: lightgray;
-  background-size: cover;
+body {
+    margin: 0;
 }
-.home-text10 {
-  font-style: italic;
-  font-family: "Courier New";
-  font-weight: 700;
+
+.nav-container {
+    display: flex;
+    background-color: #3a3a3a;
+    align-items: center;
 }
-.home-project1 {
-  font-style: normal;
-  font-family: "Courier New";
-  font-weight: 700;
-  text-decoration: none;
+
+#mavinzutitle {
+    display: block;
+    margin: 10px;
+    padding-left: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
-.home-github1 {
-  font-style: normal;
-  font-family: "Courier New";
-  font-weight: 700;
-  margin-left: var(--dl-space-space-twounits);
-  text-decoration: none;
+#mavinzutitle:hover {
+    text-decoration-line: underline;
 }
-.home-project2 {
-  font-style: normal;
-  font-family: "Courier New";
-  font-weight: 700;
-  text-decoration: none;
-}
-.home-github2 {
-  font-style: normal;
-  font-family: "Courier New";
-  font-weight: 700;
-  margin-left: var(--dl-space-space-twounits);
-  text-decoration: none;
-}
-.home-project3 {
-  font-style: normal;
-  font-family: "Courier New";
-  font-weight: 700;
-}
-.home-github3 {
-  font-style: normal;
-  font-family: "Courier New";
-  font-weight: 700;
-  margin-left: var(--dl-space-space-twounits);
-}
-.home-text17 {
-  font-size: 16em;
-  transform: rotate(90deg);
-  align-self: center;
-  font-family: "Impact";
-  margin-bottom: 1em;
-}
-.home-construction-text {
-  font-size: 1.6em;
-  font-family: "Impact";
-  padding-top: var(--dl-space-space-unit);
-}
-.home-gmail-text {
-  font-size: 1.5em;
-  font-style: normal;
-  font-family: "Source Sans 3";
-  font-weight: 900;
-  padding-top: var(--dl-space-space-sixunits);
-}
-.home-text20 {
-  height: auto;
-  font-size: 1.5em;
-  align-self: center;
-  font-family: "Impact";
-  margin-right: var(--dl-space-space-twounits);
-}
-.home-text25 {
-  font-size: 1.5em;
-  align-self: center;
-  font-family: "Impact";
-  margin-left: var(--dl-space-space-twounits);
-}
-.home-image {
-  width: auto;
-  height: 806px;
-  align-self: center;
-  object-fit: cover;
-}
-@media(max-width: 991px) {
-  .home-image {
+
+.nav-link {
+    display: flex;
     width: 100%;
-    height: 100%;
-  }
+    justify-content: flex-end;
+    list-style-type: none;
 }
-@media(max-width: 767px) {
-  .home-text17 {
-    font-size: 7em;
-    margin-top: 1em;
-    margin-bottom: 3em;
-  }
-  .home-construction-text {
-    width: 16em;
-    font-size: 1.7em;
-    transform: rotate(90deg);
-    text-align: center;
-    padding-top: 0px;
-  }
-  .home-gmail-text {
-    width: auto;
-    font-size: 1.1em;
-    margin-top: 13em;
-    text-align: center;
-    padding-top: 0px;
-  }
+.nav-link li {
+    display: block;
+    margin: 0 10px;
+    color: white;
+    font-family: monospace;
+    font-size: 24px;
 }
-@media(max-width: 479px) {
-  .home-text17 {
-    font-size: 6em;
-    transform: rotate(90deg);
-    margin-top: 1em;
-    margin-left: 0em;
-    margin-right: 0em;
-    margin-bottom: 3em;
-    padding-bottom: 0em;
-  }
-  .home-construction-text {
+.nav-link li:hover {
+    text-decoration-line: underline;
+}
+
+
+.image-project {
+    overflow: hidden;
+    justify-self: stretch;
+}
+.image-project img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.technologies {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #3a3a3a;
+}
+.technologies h2 {
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.technologies ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 0;
+    margin: 0;
+}
+.technologies li {
+    background-color: #292424;
+    color: white;
+    margin: 10px;
+    padding: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+
+
+.footer-element ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    list-style-type: none;
+}
+@media (min-width: 500px) {
+.footer-element ul {
+    grid-auto-flow: column;
+}
+}
+.footer-element a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+.footer-element a:hover {
+    text-decoration: underline;
+}
+.footer-element li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}  
+.footer-element {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    font-size: 2em;
-    transform: rotate(90deg);
-    text-align: left;
-  }
-  .home-gmail-text {
-    width: 100%;
-    font-size: 0.6em;
-    margin-top: 20em;
-    text-align: center;
-    font-family: Source Sans 3;
-    margin-bottom: var(--dl-space-space-sixunits);
-  }
-  .home-text20 {
-  height: auto;
-  font-size: 0.8em;
-  align-self: center;
-  font-family: Impact;
-  margin-right: 0;
-  }
-  .home-text25 {
-    font-size: 0.8em;
-    align-self: center;
-    font-family: Impact;
-    margin-left: 0;
-  }
-  .home-image {
-    left: 0px;
-    width: 369px;
-    bottom: 0px;
-    position: absolute;
-  }
-  .home-container1 {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  min-height: 100%;
-  align-items: center;
-  flex-direction: column;
-  background-color: lightgray;
-  background-size: cover;
-  overflow-x: hidden;
+    height: 300px;
+    background-color: #202629;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+    padding-bottom: 30px;
 }
+.footer-element img {
+    width: 200px;
+    height: auto;
+    justify-items: center;
+    margin: auto;
 }
