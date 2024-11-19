@@ -14,6 +14,7 @@ body {
     padding-left: 20px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    height: auto;
 }
 #mavinzutitle:hover {
     text-decoration-line: underline;
@@ -24,6 +25,7 @@ body {
     width: 100%;
     justify-content: flex-end;
     list-style-type: none;
+    padding: 0;
 }
 .nav-link li a {
     display: block;
