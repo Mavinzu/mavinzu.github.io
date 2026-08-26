@@ -1,0 +1,100 @@
+/* ===== GLOBAL STYLES (app.css) ===== */
+html, body { font-family: "Inter", Arial; margin: 0; overflow-x: hidden; }
+h1:focus { outline: none; }
+a, .btn-link { color: #0071c1; }
+.btn-primary { color: #fff; background-color: #1b6ec2; border-color: #1861ac; }
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus { box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; }
+.content { padding-top: 1.1rem; }
+code { color: #c02d76; }
+
+/* Custom Loader */
+#custom-loader {
+    background-image: url("/images/mainbody/background.png");
+    background-size: cover; height: 100vh; width: 100vw;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: fixed; top: 0; left: 0; z-index: 9999;
+}
+#custom-loader img { width: 256px; height: 256px; animation: spin 2s linear infinite; }
+.loading-progress-text { position: absolute; text-align: center; font-weight: bold; font-size: 2em; color: white; inset: calc(20vh + 3.25rem) 0 auto 0.2rem; }
+.loading-progress-text:before { content: "Memuat Website"; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ===== HEADER STYLES ===== */
+#header-section { max-width: 100%; max-height: 100px; display: flex; justify-content: space-between; align-items: center; }
+#header-logo { max-width: 58px; height: auto; margin: 23px 0 23px 35px; }
+#header-nav { min-width: 300px; display: flex; justify-content: space-between; font-size: 1.25em; }
+.header-navlink a { color: black; text-decoration: none; font-weight: 500; transition: text-decoration 500ms; }
+.header-navlink:hover a { text-decoration: underline; }
+#header-contact a { background-image: url("/buttons/contact-button.svg"); background-repeat: no-repeat; background-size: contain; border-radius: 32px; color: black; text-decoration: none; padding: 20px 40px; margin: 20px 35px 19px 0; font-weight: 600; font-size: 1.25em; text-align: center; display: inline-block; }
+#header-contact:hover a { background-color: black; color: white; }
+@media (max-width: 600px) { #header-nav { min-width: 0; flex-direction: column; } .header-navlink a { font-size: 4vw; } }
+@media (max-width: 350px) { #header-nav { display: none; } }
+
+/* ===== MAIN BODY STYLES ===== */
+#mainbody-section { background-image: url("/images/mainbody/background.png"); max-width: 100%; min-height: 797px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+#text-section { display: flex; flex-direction: column; width: 40%; height: 100%; padding-left: 6vw; }
+#image-section { display: flex; justify-content: space-between; align-items: center; height: 100%; }
+#section1 { display: flex; }
+#section2 { display: flex; align-items: start; }
+#text-div { padding-left: 25px; }
+#rectangle3 { max-width: 30%; height: auto; transition: transform 500ms; }
+#rectangle3:hover { transform: rotate(90deg); }
+#author-text { margin: 0; font-size: 2vw; }
+#job-text { margin: 0; font-size: 4vw; }
+#rectangle4 { max-width: 30%; height: auto; transition: transform 500ms; }
+#rectangle4:hover { transform: rotate(90deg); }
+#rectangle5 { max-width: 30%; height: auto; transition: transform 500ms; }
+#rectangle5:hover, #rectangle5:hover + #rectangle4 { transform: rotate(90deg); }
+#technologies-text { font-size: 1.4vw; max-width: 445px; padding-left: 25px; font-weight: 700; }
+#avatar { max-width: 75%; height: auto; margin: 15px; }
+#net2025 { max-width: 3%; height: auto; margin: 30px 35px; }
+@media (max-width: 1410px) { #mainbody-section { justify-content: center; } #section2 { flex-wrap: wrap; } #text-section { width: 100%; } #image-section { width: 100%; } #author-text { font-size: 5vw; } #job-text { font-size: 5vw; } #technologies-text { font-size: 3vw; } #net2025 { margin-left: 10px; margin-right: 10px; } #image-section { justify-content: center; } }
+@media (max-width: 890px) { #text-section { padding-left: 0; } #section1 { justify-content: center; align-items: center; flex-direction: column; } #section2 { justify-content: center; } #author-text { text-align: center; } #technologies-text { padding-left: 0; text-align: center; } }
+@media (max-width: 480px) { #job-text { text-align: center; } #mainbody-section { display: block; min-height: 0; } }
+
+/* ===== MIDDLE BODY STYLES ===== */
+#middlebody-section { background-color: #F1F2EE; width: 100%; height: 183px; display: flex; justify-content: space-between; align-items: center; }
+#nav-section { background-image: url("/images/middlebody/nav-background.png"); background-size: contain; background-repeat: no-repeat; min-width: 971px; height: 130px; margin: 0 20px; display: flex; }
+#nav-background2 { display: none; }
+#nav-linkedin { margin: 37px 50px 38px 50px; }
+#nav-github { margin: 37px 0 38px 0; }
+.background-img { width: 30%; height: 40%; }
+@media (max-width: 1100px) { .background-img { display: none; } #middlebody-section { justify-content: center; } }
+@media (max-width: 1000px) { #middlebody-section { height: auto; } #nav-section { background-image: none; min-width: 0; height: auto; display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; } #nav-background2 { max-width: 80%; height: auto; display: block; } #nav-linkedin { margin: 0; margin-top: 20px; } #nav-github { margin: 0; margin-top: 20px; } }
+
+/* ===== DESCRIPTION STYLES ===== */
+#description-section { min-width: 100%; min-height: 696px; background-color: #F1F2EE; }
+#text-section-desc { display: flex; align-items: center; }
+#avatar-desc { min-width: 385px; min-height: 602px; margin: 48px 0 0 106px; }
+#description-text { min-width: 800px; text-align: center; margin: 153px 30px 153px 198px; font-size: 2em; font-weight: 600; }
+#rectangle { background-color: black; width: auto; height: 6px; padding: 6px auto; margin: 0 60px 40px 60px; }
+@media (max-width: 1600px) { #description-text { margin-left: 20px; } }
+@media (max-width: 1450px) { #text-section-desc { flex-direction: column; } #avatar-desc { margin: 0; } #description-text { margin: 0; margin-bottom: 153px; } }
+@media (max-width: 850px) { #description-section { height: auto; } #description-text { min-width: 0; max-height: auto; font-size: 5vw; padding: 0 20px; margin: 20px 0; } }
+
+/* ===== BOTTOM BODY STYLES ===== */
+#bottom-section { background-color: #1C2541; width: 100%; min-height: 384px; display: flex; justify-content: space-between; align-items: center; }
+#arrow-left, #arrow-right { min-width: 97px; min-height: 384px; }
+#projects-section { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.project-item { min-width: 400px; min-height: 300px; margin: 20px 10px; border-radius: 20px; transition: transform 500ms; }
+.project-item:hover { transform: scale(1.05, 1.05); }
+#arrow-right { transform: scale(-1); float: right; }
+@media (max-width: 1040px) { #projects-section { flex-direction: column; } }
+@media (max-width: 620px) { .project-item { min-width: 0; min-height: 0; max-width: 100%; height: auto; margin: 0; } #projects-section { flex-direction: column; align-items: center; justify-content: center; } }
+@media (max-width: 350px) { #arrow-left, #arrow-right { min-width: 0; min-height: 0; max-width: 100%; height: auto; } }
+
+/* ===== FOOTER STYLES ===== */
+/* ===== SIMPLE FOOTER STYLES ===== */
+.simple-footer { background-color: #0B132B; color: #9ba4b5; padding: 30px 40px; font-family: "Inter", Arial, sans-serif; font-size: 0.9rem; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.simple-footer .footer-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
+.simple-footer .footer-links { display: flex; gap: 25px; flex-wrap: wrap;}
+.simple-footer .footer-links a { color: #ffffff; text-decoration: none; font-weight: 500; transition: opacity 0.2s ease;}
+.simple-footer .footer-links a:hover { opacity: 0.7;}
+@media (max-width: 768px) { .simple-footer .footer-container { flex-direction: column-reverse; gap: 20px; text-align: center;} .simple-footer .footer-links { justify-content: center;}}
+
+/* ===== CONSTRUCTION PAGE STYLES ===== */
+.construction-container { background-color: white; text-align: center; padding-top: 1%; height: 100vh; }
+.construction-container img { max-width: 80%; height: auto; }
+.construction-container h1 { font-size: 10vw; font-weight: 600; margin: 0; }
+.construction-container p { font-size: 3em; padding: 0 10px; font-style: italic; }
+#back-button a { color: black; text-decoration: none; font-size: 2em; padding: 10px; border: 5px solid black; border-radius: 20px; display: inline-block; margin-top: 20px; }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - MavinzuCom</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="custom-loader">
+        <img src="/images/fidget-spinner.png" alt="Loading..." />
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <main>
+        <!-- Header -->
+        <header id="header-section">
+            <img id="header-logo" src="/icons/icon-1.svg" alt="Logo">
+            <span id="header-nav">
+                <span class="header-navlink"><a href="index.html">Home</a></span>
+                <span class="header-navlink"><a href="projects.html">Projects</a></span>
+                <span class="header-navlink"><a href="about.html">About</a></span>
+            </span>
+            <span id="header-contact"><a href="mailto:mavinzu@gmail.com">Contact</a></span>
+        </header>
+
+        <!-- MainBody -->
+        <div id="mainbody-section">
+            <div id="text-section">
+                <div id="section1">
+                    <img id="rectangle3" src="/images/mainbody/rectangle3.png" alt="">
+                    <div id="text-div">
+                        <h2 id="author-text">I'm Maulana</h2>
+                        <h1 id="job-text"><b>Software Developer</b></h1>
+                    </div>
+                </div>
+                <div id="section2">
+                    <img id="rectangle5" src="/images/mainbody/rectangle5.png" alt="">
+                    <img id="rectangle4" src="/images/mainbody/rectangle4.png" alt="">
+                    <h3 id="technologies-text">I craft modern web, desktop, mobile apps, and games using the .NET ecosystem</h3>
+                </div>
+            </div>
+            <div id="image-section">
+                <img id="avatar" loading="lazy" src="/images/mainbody/avatar.png" alt="">
+                <img id="net2025" src="/images/mainbody/net2025.png" alt="">
+            </div>
+        </div>
+
+        <!-- MiddleBody -->
+        <div id="middlebody-section">
+            <img class="background-img" loading="lazy" src="/images/middlebody/background.png" alt="">
+            <span id="nav-section">
+                <a href="https://www.linkedin.com/in/mavinzu/">
+                    <img id="nav-linkedin" loading="lazy" src="/buttons/linkedin-button.svg" alt="Linkedin">
+                </a>
+                <a href="https://github.com/Mavinzu">
+                    <img id="nav-github" loading="lazy" src="/buttons/github-button.svg" alt="Github">
+                </a>
+                <img id="nav-background2" src="/images/middlebody/nav-background2.png" alt="">
+            </span>
+            <img class="background-img" loading="lazy" style="transform: scaleX(-1);" src="/images/middlebody/background.png" alt="">
+        </div>
+
+        <!-- Description -->
+        <div id="description-section">
+            <div id="text-section-desc">
+                <img id="avatar-desc" loading="lazy" src="/images/descriptionbody/avatar.png" alt="">
+                <span id="description-text">
+                    <i><p>I'm a software developer who loves building things&mdash;web apps, desktop tools, mobile experiences, and even games.
+                    My primary tools are .NET technologies like C#, ASP.NET, and Blazor, but my mindset is platform-agnostic: solve problems,
+                    write clean code, and create value.</p>
+                    <p>I believe in continuous learning and building software that's both useful and enjoyable to use.
+                    Whether it's crafting an elegant UI, designing robust backend systems, or prototyping game mechanics,
+                    I enjoy turning ideas into working software.</p></i>
+                </span>
+            </div>
+            <div id="rectangle"></div>
+        </div>
+
+        <!-- BottomBody -->
+        <div id="bottom-section">
+            <img id="arrow-left" loading="lazy" src="/buttons/arrow-button.svg" alt="">
+            <span id="projects-section">
+                <a href="https://mavinzu.itch.io/minespin-mineralmine"><img class="project-item" loading="lazy" src="projects/mineralmine-project.png" alt=""></a>
+                <a href="https://mavinzu.itch.io/polyzu-city"><img class="project-item" loading="lazy" src="projects/city-project.png" alt=""></a>
+                <a href="https://mavinzu.itch.io/depth-sea-submarine-assault"><img class="project-item" loading="lazy" src="projects/deepsea-project.png" alt=""></a>
+                <a href="https://mavinzu.itch.io/spaceship-obliterator"><img class="project-item" loading="lazy" src="projects/spaceship-project.png" alt=""></a>
+            </span>
+            <img id="arrow-right" loading="lazy" src="/buttons/arrow-button.svg" alt="">
+        </div>
+
+        <!-- FooterBody -->
+        <!-- Simple Standard Footer -->
+        <footer class="simple-footer">
+            <div class="footer-container">
+                <div class="footer-copyright">
+                    &copy; 2026 Maulana. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Mavinzu" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mavinzu/" target="_blank">LinkedIn</a>
+                    <a href="https://mavinzu.itch.io" target="_blank">Itch.io</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // JS murni untuk menghilangkan efek loader setelah website termuat
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('custom-loader');
+            if (loader) {
+                loader.style.transition = 'opacity 0.5s ease';
+                loader.style.opacity = '0';
+                setTimeout(() => loader.remove(), 500);
+            }
+        });
+    </script>
+</body>
+</html>
