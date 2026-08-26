@@ -1,4 +1,4 @@
-Copyright (c) 2025 Mavinzu
+Copyright (c) Mavinzu
 
 All rights reserved.
 
